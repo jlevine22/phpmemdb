@@ -12,4 +12,3 @@ END: Exit the program
 BEGIN: Open a transactional block
 ROLLBACK: Rollback all of the commands from the most recent transaction block. If no transactional block is open, print out INVALID ROLLBACK
 COMMIT: Permanently store all of the operations from any presently open transactional blocks
-Our database supports nested transactional blocks as you can tell by the above commands. Remember, ROLLBACK only rolls back the most recent transaction block, while COMMIT closes all open transactional blocks. Any command issued outside of a transactional block commits automatically.
